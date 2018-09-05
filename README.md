@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project #1: Let the Games Begin
 
 ### Requirements
@@ -68,3 +69,7 @@ Found [here](../common_project_docs/project_week.md)
 
 ### Plagiarism Review
 Found [here](../common_project_docs/plagiarism_review.md)
+=======
+# Project1BlackJack
+Black Jack
+>>>>>>> 7fe3b24f62d083467b285611ce6140a5eb5abbb0
