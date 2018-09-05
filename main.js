@@ -52,14 +52,14 @@ var cards = [{
     },
 ]
 
-PlayerHand = []
+var playerHand = []
 
-PlayerOne = function () {
-    PlayerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-    PlayerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-    console.log(PlayerHand)
+var playerOne = function () {
+    playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+    playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+    console.log(playerHand)
 }
-PlayerOne()
+playerOne()
 
 
 var dealerHand = []
@@ -75,5 +75,17 @@ window.onload = function () {
     $('#start').click(dealer)
 }
 
-if (player > dealer){
-    win}
+window.onload = function () {
+    $('#start').click(playerOne)
+}
+
+$('#hit').on('click', function(){
+    playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+});
+/*if you want to specifically name this function with an on-click event, do like so
+$('#hit').on('click', addCard());
+function addCard(){
+playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+} */
+  
+        
