@@ -57,35 +57,55 @@ var playerHand = []
 var playerOne = function () {
     playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
     playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-    console.log(playerHand)
+    console.log("PLAYER HAND", playerHand)
+    // playerOne()
+//    sum = 0
+//    playerHandSum = () => {
+    // for (var i = 0; i < playerHand.length; i++) {
+        // var aCard = playerHand[i]
+        // console.log(aCard.Value)
+        // var cardValue = aCard.Value
+        // sum+=aCard.Value
+// }
+// return sum;
 }
-playerOne()
+
+// playerHandSum()
+// }
 
 
-var dealerHand = []
+var sum = 0
 
+playerHandSum = () => {
+    for (var i = 0; i < playerHand.length; i++) {
+        var aCard = playerHand[i]
+        console.log(aCard.Value)
+        var cardValue = aCard.Value
+        sum+=cardValue
+}
+
+return sum;
+}
+
+playerHandSum()
+
+var dealerHand = [];
 var dealer = function () {
+    
     dealerHand.push(cards[Math.floor(Math.random() * cards.length)]);
     dealerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-    console.log(dealerHand)
+    console.log("DEALER HAND", dealerHand)
 }
-dealer()
 
 window.onload = function () {
     $('#start').click(dealer)
-}
-
-window.onload = function () {
     $('#start').click(playerOne)
+        
+
+    $('#hit').on('click', function() {
+        playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+        console.log("PLAYERHAND",playerHand)
+    });
 }
 
-$('#hit').on('click', function(){
-    playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-});
-/*if you want to specifically name this function with an on-click event, do like so
-$('#hit').on('click', addCard());
-function addCard(){
-playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
-} */
-  
-        
+if
