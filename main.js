@@ -74,9 +74,9 @@ var playerOne = function () {
 // }
 
 
-var sum = 0
 
 playerHandSum = () => {
+    sum = 0
     for (var i = 0; i < playerHand.length; i++) {
         var aCard = playerHand[i]
         console.log(aCard.Value)
@@ -97,15 +97,49 @@ var dealer = function () {
     console.log("DEALER HAND", dealerHand)
 }
 
+
+dealerHandSum = () => {
+    sum = 0
+    for (var i = 0; i < dealerHand.length; i++) {
+        var bCard = dealerHand[i]
+        console.log(bCard.Value)
+        var cardValue = bCard.Value
+        sum+=cardValue
+}
+
+return sum;
+}
+
+dealerHandSum()
+
 window.onload = function () {
     $('#start').click(dealer)
     $('#start').click(playerOne)
-        
+    $('#total').on('click', function () {
+        sum = 0
+        for (var i = 0; i < playerHand.length; i++) {
+            var aCard = playerHand[i]
+            // console.log(playerHand[i])
+            var cardValue = aCard.Value
+            // console.log(aCard.Value)
+            sum+=cardValue
+            console.log(sum)
+            
+        }return sum
+            // var aCard = playerHand[i]
+        // console.log(aCard.Value)
+        // var cardValue = aCard.Value
+        // sum+=aCard.Value
+            
+
+            
+            // sum+=cardValue
+    // return sum
+    })
 
     $('#hit').on('click', function() {
         playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
         console.log("PLAYERHAND",playerHand)
     });
-}
 
-if
+}
