@@ -98,34 +98,31 @@ var dealer = function () {
 }
 
 
-dealerHandSum = () => {
-    sum = 0
-    for (var i = 0; i < dealerHand.length; i++) {
-        var bCard = dealerHand[i]
-        console.log(bCard.Value)
-        var cardValue = bCard.Value
-        sum+=cardValue
-}
+// dealerHandSum = () => {
+    // sum = 0
+    // for (var i = 0; i < dealerHand.length; i++) {
+        // var bCard = dealerHand[i]
+        // console.log(bCard.Value)
+        // var cardValue = bCard.Value
+        // sum+=cardValue
 
-return sum;
-}
 
-dealerHandSum()
+// return sum;
+
+
+// dealerHandSum()
 
 window.onload = function () {
     $('#start').click(dealer)
     $('#start').click(playerOne)
     $('#total').on('click', function () {
-        sum = 0
+        playerSum = 0
         for (var i = 0; i < playerHand.length; i++) {
             var aCard = playerHand[i]
-            // console.log(playerHand[i])
             var cardValue = aCard.Value
-            // console.log(aCard.Value)
-            sum+=cardValue
-            console.log(sum)
+            playerSum+=cardValue
             
-        }return sum
+        }return playerSum
             // var aCard = playerHand[i]
         // console.log(aCard.Value)
         // var cardValue = aCard.Value
@@ -136,6 +133,36 @@ window.onload = function () {
             // sum+=cardValue
     // return sum
     })
+
+    $('#stay').on('click', function () {
+        dealerSum = 0
+        Message = "Player Wins!"
+        Message = "House Wins!"
+        for (var i = 0; i < dealerHand.length; i++) {
+            var aCard = dealerHand[i]
+            var cardValue = aCard.Value
+            dealerSum+=cardValue
+            
+        }return dealerSum
+
+        // if (playerSum > dealerSum) {
+            dealerHand.push(cards[Math.floor(Math.random() * cards.length)]);
+        // }
+        if (dealerSum > 21) {
+            Message = "Player Wins!"; 
+        }
+        if(dealerSum > playerSum) {
+            Message = "House Wins!";
+        } else {
+            greeting = "Player Wins!";
+        }
+        if (dealerSum > 21) {
+            Message = "Player Wins!";
+        } 
+        if (dealerSum = playerSum) {
+            Message = "Player Wins!";
+        } 
+    });
 
     $('#hit').on('click', function() {
         playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
