@@ -101,8 +101,8 @@ $('#total').on('click', function () {
 
 $('#stay').on('click', function () {
     dealerSum = 0
-    Message = "Player Wins!"
-    Message = "House Wins!"
+    // Message = "Player Wins!"
+    // Message = "House Wins!"
 
     if (playerSum >= dealerSum) {
         dealerHand.push(cards[Math.floor(Math.random() * cards.length)]);
@@ -114,6 +114,9 @@ $('#stay').on('click', function () {
         // console.log("DEALER SUM", dealerSum)
 
     }
+    // return dealerSum
+    swal(`${dealerSum}`);
+
     if (dealerSum > 21) {swal(
         "Player Wins!");
     }
@@ -126,8 +129,6 @@ $('#stay').on('click', function () {
     if (dealerSum > 21) {swal(
         "Player Wins!");
     }
-    // return dealerSum
-    swal(`${dealerSum}`);
 });
 
 $('#hit').on('click', function () {

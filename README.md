@@ -21,11 +21,18 @@ Users will be notified immediately whether they won or loss the game.
 
 Technologies Used
 
-HTML, CSS, Javascript, & Jquery
+HTML, CSS, Javascript, Jquery & Sweet Alerts
 
 
 Wireframes 
 ![wireframing](wireframe.jpg)
+
+Struggles and Lessons
+
+
+I am still struggling with writing my functions so they would often not work the way as I expected.  In particular, my loops continued to repeat more often than needed.  I learned a lot about conditional statements with this game.  
+
+
 
 Future Features
 
