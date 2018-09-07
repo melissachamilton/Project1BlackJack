@@ -14,5 +14,10 @@ Technologies Used
 HTML, CSS, Javascript, & Jquery
 
 Wireframes 
-![Alt text](/relative/path/to/img.jpg?raw=true "Wireframe")
+![wireframing](/Desktop/projects/unit_01/Wireframe.jpg?raw=true "Wireframe")
 
+
+Future Features
+The ability to add additional Players.
+The ability to change style of play (for example: Vegas Style, Jackpot City Casino,House Rules )
+Ability to change Deck Styles.
