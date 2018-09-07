@@ -7,6 +7,10 @@ Inspiration
 
 I have always enjoyed Black Jack.  I'm not Casino ready, but I thought it would be fun to design a game to help me practice.  
 
+My link
+
+http://determined-bartik-6657a6.netlify.com
+
 
 User Stories
 
@@ -21,13 +25,15 @@ Users will be notified immediately whether they won or loss the game.
 
 Technologies Used
 
-HTML, CSS, Javascript, Jquery & Sweet Alerts
+Languages: HTML, CSS, Javascript & Jquery 
+Design: Sweet Alerts
+Visual Code
+https://trello.com/b/8OBchTFA/project-1-black-jack
 
-
-Wireframes 
+Wireframe
 ![wireframing](wireframe.jpg)
 
-Struggles and Lessons
+Struggles and Successes 
 
 
 I am still struggling with writing my functions so they would often not work the way as I expected.  In particular, my loops continued to repeat more often than needed.  I learned a lot about conditional statements with this game.  
