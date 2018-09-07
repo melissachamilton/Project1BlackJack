@@ -83,9 +83,13 @@ dealerHand.push(cards[Math.floor(Math.random() * cards.length)]);
 console.log("DEALER HAND", dealerHand)
 }
 
+var picture = function () {
+    $('.image').html('<img src="cards.jpg" alt="cards">')
+}
 window.onload = function () {
-$('#start').click(dealer)
+$('#start').click(dealer) 
 $('#start').click(playerOne)
+$('#start').click(picture)
 $('#total').on('click', function () {
     playerSum = 0
     for (var i = 0; i < playerHand.length; i++) {
