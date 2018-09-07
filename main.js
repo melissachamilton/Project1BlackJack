@@ -58,22 +58,8 @@ var playerOne = function () {
     playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
     playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
     console.log("PLAYER HAND", playerHand)
-    // playerOne()
-    //    sum = 0
-    //    playerHandSum = () => {
-    // for (var i = 0; i < playerHand.length; i++) {
-    // var aCard = playerHand[i]
-    // console.log(aCard.Value)
-    // var cardValue = aCard.Value
-    // sum+=aCard.Value
-    // }
-    // return sum;
+    
 }
-
-// playerHandSum()
-// }
-
-
 
 playerHandSum = () => {
     sum = 0
@@ -97,21 +83,6 @@ var dealer = function () {
     console.log("DEALER HAND", dealerHand)
 }
 
-
-// dealerHandSum = () => {
-// sum = 0
-// for (var i = 0; i < dealerHand.length; i++) {
-// var bCard = dealerHand[i]
-// console.log(bCard.Value)
-// var cardValue = bCard.Value
-// sum+=cardValue
-
-
-// return sum;
-
-
-// dealerHandSum()
-
 window.onload = function () {
     $('#start').click(dealer)
     $('#start').click(playerOne)
@@ -125,15 +96,6 @@ window.onload = function () {
 
         }
         return playerSum
-        // var aCard = playerHand[i]
-        // console.log(aCard.Value)
-        // var cardValue = aCard.Value
-        // sum+=aCard.Value
-
-
-
-        // sum+=cardValue
-        // return sum
     })
 
     $('#stay').on('click', function () {
@@ -153,8 +115,9 @@ window.onload = function () {
         }
         if (dealerSum > 21) {
             Message = "Player Wins!";
-            console.log('Player Wins!')
+            // console.log('Player Wins!')
         }
+    
         if (dealerSum > playerSum) {
             Message = "House Wins!";
         } else {
@@ -163,9 +126,6 @@ window.onload = function () {
         if (dealerSum > 21) {
             Message = "Player Wins!";
         }
-        // if (dealerSum = playerSum) {
-        // Message = "Player Wins!";
-        // } 
         return dealerSum
     });
 
@@ -173,11 +133,12 @@ window.onload = function () {
         playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
         console.log("PLAYERHAND", playerHand)
     });
-
 }
 
+// $('button').on('click', () => {
+    // $('.message').html('Player Wins!!!')
+// })
+
 $('button').on('click', () => {
-    $('.message').html('Player Wins!!!')
-})
-
-
+    $('.message').html('Player W!!!')
+});
