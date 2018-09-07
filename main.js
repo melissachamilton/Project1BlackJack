@@ -95,7 +95,8 @@ $('#total').on('click', function () {
         // console.log("PLAYER SUM", playerSum)
 
     }
-    return playerSum
+    // return playerSum
+   swal(`${playerSum}`);
 })
 
 $('#stay').on('click', function () {
@@ -125,7 +126,8 @@ $('#stay').on('click', function () {
     if (dealerSum > 21) {swal(
         "Player Wins!");
     }
-    return dealerSum
+    // return dealerSum
+    swal(`${dealerSum}`);
 });
 
 $('#hit').on('click', function () {
