@@ -9,7 +9,7 @@ I have always enjoyed Black Jack.  I'm not Casino ready, but I thought it would 
 
 My link
 
-http://determined-bartik-6657a6.netlify.com
+https://boring-lamport-d100a7.netlify.com/
 
 
 User Stories
