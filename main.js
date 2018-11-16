@@ -11,13 +11,13 @@ var cards = [{
 {
     Name: "Jack",
     Value: 10,
-    Img: '<img src="JackofSpades.jpeg" alt="Jack of Spades">'
+    Img: '<img src="JackofHearts.png" alt="Jack of Hearts">'
   
 },
 {
     Name: "Card10",
     Value: 10,
-    Img: '<img src="10ofDiamonds.jpeg" alt="10 of Diamonds">'
+    Img: '<img src="10ofClubs.png" alt="10 of Clubs">'
 },
 {
     Name: "Card9",
@@ -33,7 +33,7 @@ var cards = [{
 {
     Name: "Card7",
     Value: 7,
-    Img: '<img src="7ofSpades.png" alt="7 of Spades">'
+    Img: '<img src="7ofHearts.png" alt="7 of Hearts">'
 },
 {
     Name: "Card6",
@@ -48,7 +48,7 @@ var cards = [{
 {
     Name: "Card4",
     Value: 4,
-    Img: '<img src="4ofhearts.png" alt="4 of Hearts">'
+    Img: '<img src="4ofspades.png" alt="4 of Spades">'
 },
 {
     Name: "Card3",
@@ -106,7 +106,6 @@ $('#hit').on('click', function () {
   playerHand.push(cards[Math.floor(Math.random() * cards.length)]);
   console.log("PLAYERHAND", playerHand)
   var aCard = playerHand[playerHand.length - 1]
-    // var aCard = playerHand[2]
     console.log("AHITCard", aCard)
     var eachCard = aCard.Img 
     console.log("Each HIT Card", eachCard)
