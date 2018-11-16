@@ -7,6 +7,9 @@
 I have always enjoyed Black Jack.  I'm not Casino ready, but I thought it would be fun to design a game to help me practice.  
 
 <h3>My Links</h3>
+Version 2 link
+https://friendly-ritchie-3d2816.netlify.com/
+
 https://boring-lamport-d100a7.netlify.com/
 
 https://trello.com/b/8OBchTFA/project-1-black-jack
